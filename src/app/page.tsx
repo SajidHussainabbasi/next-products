@@ -31,25 +31,25 @@ export default function HomePage() {
 
       {/* Search input */}
       <input
-  type="text"
-  placeholder="Search products..."
-  value={search}
-  onChange={(e) => setSearch(e.target.value)}
-  className="mb-4 p-2 rounded border border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 max-w-md w-full"
-/>
+        type="text"
+        placeholder="Search products..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="mb-4 p-2 rounded border border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 max-w-md w-full"
+      />
 
-{/* Category filter */}
-<select
-  value={category}
-  onChange={(e) => setCategory(e.target.value)}
-  className="mb-6 p-2 rounded border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
->
-  <option value="all" className="bg-gray-800 text-white">All Categories</option>
-  <option value="electronics" className="bg-gray-800 text-white">Electronics</option>
-  <option value="men's clothing"className="bg-gray-800 text-white">Men's Clothing</option>
-  <option value="women's clothing" className="bg-gray-800 text-white">Women's Clothing</option>
-  {/* Add your categories */}
-</select>
+      {/* Category filter */}
+      <select
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
+        className="mb-6 p-2 rounded border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+      >
+        <option value="all" className="bg-gray-800 text-white">All Categories</option>
+        <option value="electronics" className="bg-gray-800 text-white">Electronics</option>
+        <option value="men's clothing" className="bg-gray-800 text-white">Men&apos;s Clothing</option>
+        <option value="women's clothing" className="bg-gray-800 text-white">Women&apos;s Clothing</option>
+        {/* Add your categories */}
+      </select>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {filteredProducts.length > 0 ? (

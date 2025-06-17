@@ -1,3 +1,4 @@
+
 import { fetchProductById } from '../../../apis/getProducts';
 import ProductDetails from '../../../components/ProductDetails';
 
