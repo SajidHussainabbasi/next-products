@@ -1,13 +1,11 @@
 import { fetchProductById } from '../../../apis/getProducts';
 import ProductDetails from '../../../components/ProductDetails';
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function ProductPage({ params }: Props) {
+export default async function ProductPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const product = await fetchProductById(params.id);
 
   return (
